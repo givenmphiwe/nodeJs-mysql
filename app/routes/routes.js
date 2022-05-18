@@ -1,19 +1,20 @@
 module.exports = app => {
-    const tutorials = require("../controllers/controller.js");
+    const EpicdevDB = require("../controllers/controller.js");
     var router = require("express").Router();
-    // Create a new Tutorial
-    router.post("/", tutorials.create);
-    // Retrieve all Tutorials
-    router.get("/", tutorials.findAll);
-    // Retrieve all published Tutorials
-    router.get("/published", tutorials.findAllPublished);
-    // Retrieve a single Tutorial with id
-    router.get("/:id", tutorials.findOne);
-    // Update a Tutorial with id
-    router.put("/:id", tutorials.update);
-    // Delete a Tutorial with id
-    router.delete("/:id", tutorials.delete);
-    // Delete all Tutorials
-    router.delete("/", tutorials.deleteAll);
+
+    // Create a new EpicdevDB
+    router.post("/", EpicdevDB.create);
+    // Retrieve all EpicdevDB
+    router.get("/", EpicdevDB.findAll);
+    // Retrieve all EpicdevDB
+    router.get("/published", EpicdevDB.findAllPublished);
+    // Retrieve a single EpicdevDB with id
+    router.get("/:id", EpicdevDB.findOne);
+    // Update a EpicdevDB with id
+    router.put("/:id", EpicdevDB.update);
+    // Delete a EpicdevDB with id
+    router.delete("/:id", EpicdevDB.delete);
+    // Delete all EpicdevDB
+    router.delete("/", EpicdevDB.deleteAll);
     app.use('/api/tutorials', router);
   };
