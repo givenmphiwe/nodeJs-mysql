@@ -2,7 +2,7 @@ const db = require("../models");
 const Epicdev = db.Assessment;
 const Op = db.Sequelize.Op;
 
-// Create and Save a new
+// Create and Save new
 exports.create = (req, res) => {
   // Validate request
   if (!req.body.name) {
