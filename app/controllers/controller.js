@@ -16,7 +16,7 @@ exports.create = (req, res) => {
     name: req.body.name,
     surname: req.body.surname,
     username: req.body.username,
-    password: req.body.password,
+    password_uid: req.body.password_uid,
     email: req.body.email,
     homeNumber: req.body.homeNumber,
     cellNumber: req.body.cellNumber,
