@@ -15,7 +15,13 @@ exports.create = (req, res) => {
   const database = {
     name: req.body.name,
     surname: req.body.surname,
+    username: req.body.username,
     password: req.body.password,
+    email: req.body.email,
+    homeNumber: req.body.homeNumber,
+    cellNumber: req.body.cellNumber,
+    title: req.body.title,
+    description: req.body.description,
     published: req.body.published ? req.body.published : false
   };
   // Save in the database
