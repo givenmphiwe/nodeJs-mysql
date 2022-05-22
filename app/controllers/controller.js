@@ -52,7 +52,7 @@ exports.findAll = (req, res) => {
         });
       });
 };
-// Find a single Epicdev with an id
+// Find a single db with an id
 exports.findOne = (req, res) => {
     const id = req.params.id;
     Epicdev.findByPk(id)
@@ -96,7 +96,7 @@ exports.update = (req, res) => {
   
 };
 // Delete the specified id in the request
-exports.delete = (req, res) => {
+exports.deleteA = (req, res) => {
     const id = req.params.id;
     Epicdev.destroy({
       where: { id: id }

@@ -16,5 +16,5 @@ module.exports = app => {
     router.delete("/:id", EpicdevDB.delete);
     // Delete all EpicdevDB
     router.delete("/", EpicdevDB.deleteAll);
-    app.use('/api/tutorials', router);
+    app.use('/api/Home-list', router);
   };
